@@ -8,11 +8,15 @@
     */
 
     //ENTRADA
-
+const salarioFixo = Number(prompt("Informe seu salário fixo:"))
+const qntCarros = parseInt(prompt("Quantidade de carros vendidos:"))
+const valorDoCarro = Number(prompt("Informe o valor do carro:"))
 
     //PROCESSAMENTO
-
+const valorRecebidoPorCarro = (3/100 * qntCarros) * qntCarros
+const bonusVendaTotal = (5/100 * valorDoCarro) 
+const valorDoSalario = valorRecebidoPorCarro + bonusVendaTotal + salarioFixo
 
     //SAÍDA
-
+document.write(`O seu salário final é R$${valorDoSalario}`)
 </script>
